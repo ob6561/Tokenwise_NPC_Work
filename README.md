@@ -19,7 +19,7 @@ TokenWise connects to the Solana blockchain via WebSocket (Helius), tracks live 
 
 ## 🪙 Target Token
 
-- **Mint Address:** `9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump`
+- **Mint Address:** `DezXf9zFALWwXvjfFqNqKzQK77ccXcVyxB3E9ENthUZm`
 - **Blockchain:** Solana
 
 ---
@@ -33,25 +33,6 @@ TokenWise connects to the Solana blockchain via WebSocket (Helius), tracks live 
 - ⏱️ **Time Filters** (All Time, Today, Last Hour)
 
 ---
-
-## 🗂️ Project Structure
-
-tokenwise/
-├── backend/
-│   ├── fetch_top_wallets.py       # Script to fetch top 60 token holders
-│   └── monitor_live_activity.py   # WebSocket stream to capture live transactions
-│
-├── dashboard/
-│   └── app.py                     # Streamlit dashboard UI
-│
-├── data/
-│   ├── top_60_wallets.json        # List of top token holders
-│   └── live_transactions.jsonl    # Real-time transaction logs
-│
-├── .env                           # Helius API key (excluded from Git)
-├── requirements.txt               # All Python dependencies
-└── README.md                      # Project documentation
-
 
 🔧 Code Modules
 🔐 Environment Setup
