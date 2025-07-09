@@ -38,31 +38,33 @@ TokenWise connects to the Solana blockchain via WebSocket (Helius), tracks live 
 
 tokenwise/
 ├── backend/
-│ ├── fetch_top_wallets.py # Gets top holders
-│ └── monitor_live_activity.py # Listens to token transfers
+│   ├── fetch_top_wallets.py       # Script to fetch top 60 token holders
+│   └── monitor_live_activity.py   # WebSocket stream to capture live transactions
+│
 ├── dashboard/
-│ └── app.py # Streamlit dashboard
+│   └── app.py                     # Streamlit dashboard UI
+│
 ├── data/
-│ ├── top_60_wallets.json # List of top holders
-│ └── live_transactions.jsonl # Logs of matched transactions
-├── .env # Helius API key (not committed)
-├── requirements.txt
-└── README.md
+│   ├── top_60_wallets.json        # List of top token holders
+│   └── live_transactions.jsonl    # Real-time transaction logs
+│
+├── .env                           # Helius API key (excluded from Git)
+├── requirements.txt               # All Python dependencies
+└── README.md                      # Project documentation
 
-Codes:
 
-Virtual environment setup:
-`.env`
+🔧 Code Modules
+🔐 Environment Setup
+`.env` — contains the Helius API key
 
-Backend:
-`fetch_top_wallets.py`
-`monitor_live_activity.py`
+🧠 Backend
+`fetch_top_wallets.py` — gets the top 60 holders from Helius API
+`monitor_live_activity.py` — monitors and logs live token transactions via WebSocket
 
-Dashboard:
+📊 Dashboard
+`app.py` — loads and visualizes real-time transaction data with filters, charts, and tables
 
-`app.py`
-
-Data:
-
-`live_transactions.jsonl`
-`top_60_wallets.json`
+💾 Data Files
+`top_60_wallets.json` — cached top wallets data
+`live_transactions.jsonl` — live stream log of token transfers
+`requirements.txt` - description of all the modules and libraries required
